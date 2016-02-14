@@ -6,3 +6,4 @@ djangorestframework==3.3.2
 gunicorn==19.4.5
 pickleshare==0.6
 wheel==0.29.0
+whitenoise==2.0.6
