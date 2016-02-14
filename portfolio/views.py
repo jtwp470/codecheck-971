@@ -72,6 +72,7 @@ def project_detail(request, pk):
         return JSONResponse(serializer.data)
 
     elif request.method == "DELETE":
+        print(request.body)
         project.delete()
-        return JSONResponse(status=200)
+        return JSONResponse([], status=200)
     return HttpResponse(status=500)
